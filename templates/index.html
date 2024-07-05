@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #151C23;
+        }
+        .chat-container {
+            max-width: 800px;
+            max-height:800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #111418;
+            position: relative;
+            padding-top: 60px;
+        }
+        .chat-log {
+            padding: 20px;
+            background-color: #111418;
+            height: 300px;
+            overflow-y: auto;
+            color: #ffffff;
+        }
+        .chat-message {
+            padding: 20px;
+            border-top: 1px solid #1B1E21;
+            display: flex;
+            flex-direction: column-reverse; /* Reverse the order */
+        }
+        .chat-input {
+            width: calc(100% - 50px);
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            background-color: #22282E;
+            color: #ffffff;
+            margin-right: 10px;
+        }
+        #send-button {
+            display: none;
+        }
+        .user-message {
+            background-color: #008AA2; /* Darker background */
+            border-radius: 4px;
+            padding: 10px;
+            max-width: 70%;
+            color: #ffffff;
+            align-self: flex-end; /* Align to the right */
+            margin-bottom: 10px; /* Add margin between messages */
+            margin-left: auto; /* Move message to the right */
+        }
+        .bot-message {
+            background-color: #0D749C; /* Darker background */
+            border-radius: 4px;
+            padding: 10px;
+            max-width: 70%;
+            color: #ffffff;
+            align-self: flex-start; /* Align to the left */
+            margin-bottom: 10px; /* Add margin between messages */
+            margin-right: auto; /* Move message to the left */
+            font-weight: bold; /* Make the bot's response text bold */
+        }
+        .message-text {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.4;
+            opacity: 0; /* Initially hide the message */
+            animation: fade-in 4s ease forwards; /* Apply fade-in animation */
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .unubot-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<d>
+
+    <div class="chat-container">
+        <h1 class="unubot-logo">UNUBOT</h1>
+        <div class="chat-log" id="chat-log"></div>
+        <div class="chat-message">
+            <input type="text" id="user-input" class="chat-input" placeholder="Type your message here...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("user-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("send-button").click();
+            }
+        });
+
+        document.getElementById("send-button").addEventListener("click", function() {
+            var user_input = document.getElementById("user-input").value;
+            if (user_input.trim() !== "") {
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/get_response", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+                        var response = xhr.responseText;
+                        var chat_log = document.getElementById("chat-log");
+                        var user_message_div = document.createElement("div");
+                        user_message_div.className = "user-message";
+                        var user_message_p = document.createElement("p");
+                        user_message_p.className = "message-text";
+                        user_message_p.textContent = "You: " + user_input;
+                        user_message_div.appendChild(user_message_p);
+                        chat_log.appendChild(user_message_div);
+
+                        var bot_message_div = document.createElement("div");
+                        bot_message_div.className = "bot-message";
+                        var bot_message_p = document.createElement("p");
+                        bot_message_p.className = "message-text";
+                        bot_message_p.textContent = response;
+                        bot_message_div.appendChild(bot_message_p);
+                        chat_log.appendChild(bot_message_div);
+
+                        chat_log.scrollTop = chat_log.scrollHeight;
+                    }
+                };
+                xhr.send("user_input=" + user_input);
+                document.getElementById("user-input").value = "";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["hallo", "hai", "hello", "halo", "hei", "hy", "pagi", "siang", "malam"],
+            "responses": ["Hai, ada yang bisa saya bantu?"]
+        },
+        {
+            "tag": "UNU",
+            "patterns": ["UNU", "UNUKASE", "apa itu UNU?", "apa Itu UNUKASE"],
+            "responses": ["Universitas Nahdlatul Ulama Kalimantan Selatan (UNUKASE) merupakan perguruan tinggi di bawah Badan Hukum Milik Pengurus Besar Nahdlatul Ulama (PBNU),Badan Perkumpulan Nahdlatul Ulama,yang mendapatkan Pengesahan dari Kementrian Hukum Dan Hak Asasi Manusia Republik Indonesia"]
+        },
+        {
+            "tag": "location",
+            "patterns": ["dimana", "lokasinya dimana", "alamatnya dimana", "dimanakah letaknya"],
+            "responses": ["Universitas nya terletak di Jl. A. Yani No 12,500 Banua Hanyar,Kec Kertak Hanyar,Kab Banjar,Kalimantan Selatan 70652"]
+        },
+        {
+            "tag": "registration_process",
+            "patterns": ["proses pendaftaran", "pendaftaran mahasiswa baru", "bagaimana mendaftar", "bagaimana proses pendaftaran","pendaftaran"],
+            "responses": ["Proses pendaftaran mahasiswa baru dapat dilakukan secara online melalui portal penerimaan mahasiswa baru di website resmi UNUKASE. Calon mahasiswa diharapkan untuk mengisi formulir pendaftaran dengan lengkap dan mengikuti prosedur yang telah ditetapkan."]
+        },
+        {
+            "tag": "surat_menyurat",
+            "patterns": ["surat", "SKAK", "Surat Keterangan Aktif Kuliah", "Surat Dispensasi", "Surat Rekomendasi Kegiatan", "Surat Keputusan (SK) Kepengurusan Organisasi Kemahasiswaan (ORMAWA)", "bagaimana cara mendapatkan surat", "bagaimana cara mendapatkan SKAK", "bagaimana cara mengajukan surat"],
+            "responses": ["Melalui pesan ini perlu kami sampaikan hal-hal penting sebagai berikut : 1. Bagi mahasiswa/i yang memerlukan surat-menyurat seperti Surat Keterangan Aktif Kuliah, Surat Dispensasi Kuliah, Surat Rekomendasi Kegiatan, Surat Keputusan (SK) Kepengurusan Organisasi Kemahasiswaan (ORMAWA), dll yang berkaitan dengan Akademik dan Kemahasiswaan silahkan untuk mengajukan permohonan surat melalui link : https://tinyurl.com/PengajuanSuratBAAKUnukase"]
+        },        
+        {
+            "tag": "requirements",
+            "patterns": ["persyaratan pendaftaran", "persyaratan","dokumen yang dibutuhkan", "persyaratan mendaftar"],
+            "responses": ["Persyaratan pendaftaran dapat berbeda-beda tergantung pada program studi yang diminati di UNUKASE. Namun, umumnya calon mahasiswa diharuskan untuk melampirkan dokumen seperti transkrip nilai, sertifikat ujian masuk, surat rekomendasi, dan lain-lain."]
+        },
+        {
+            "tag": "admission_schedule",
+            "patterns": ["jadwal penerimaan mahasiswa baru","pkkmb", "kapan penerimaan mahasiswa baru", "jadwal pendaftaran"],
+            "responses": ["Jadwal penerimaan mahasiswa baru di UNUKASE akan diumumkan melalui website resmi universitas. Silakan pantau pengumuman terkait jadwal pendaftaran dan prosedur lainnya."]
+        },
+        {
+            "tag": "academic_programs",
+            "patterns": ["program studi yang tersedia", "apa saja program studi"],
+            "responses": ["UNUKASE menawarkan beragam program studi baik tingkat sarjana Informasi lebih lanjut dapat ditemukan di website resmi UNUKASE."]
+        },
+        {
+            "tag": "scholarship_programs",
+            "patterns": ["program beasiswa","beasiswa","bagaimana cara mendapatkan beasiswa", "beasiswa yang tersedia"],
+            "responses": ["UNUKASE menawarkan berbagai jenis beasiswa akademik dan non-akademik untuk mahasiswa berprestasi dan berkebutuhan finansial. Beasiswa nya Seperti Beasiswa KIP,Beasiswa Baznas,Dan Beasiswa NU. Informasi lebih lanjut mengenai program beasiswa dan persyaratan pendaftarannya dapat ditemukan di website resmi universitas."]
+        },
+        {
+            "tag": "tuition_payment",
+            "patterns": ["sistem pembayaran kuliah","pembayaran","biaya kuliah", "bagaimana membayar kuliah"],
+            "responses": ["Informasi mengenai sistem pembayaran kuliah dan biaya lainnya di UNUKASE dapat ditemukan di bagian keuangan atau website resmi universitas. UNUKASE juga menyediakan layanan bantuan keuangan untuk membantu mahasiswa yang membutuhkan."]
+        },
+        {
+            "tag": "university_facilities",
+            "patterns": ["fasilitas universitas", "fasilitas","apa saja fasilitas yang tersedia"],
+            "responses": ["UNUKASE memiliki berbagai fasilitas modern, termasuk lab Komputer,Mesjid, perpustakaan, dan fasilitas pendukung lainnya untuk mendukung kegiatan belajar mengajar dan pengembangan diri mahasiswa."]
+        },
+        {
+            "tag": "academic_system",
+            "patterns": ["sistem akademik", "kurikulum", "bagaimana sistem akademik"],
+            "responses": ["UNUKASE menerapkan sistem akademik yang didukung oleh kurikulum yang komprehensif dan relevan dengan kebutuhan industri. Kurikulum UNUKASE dirancang untuk mengembangkan pengetahuan, keterampilan, dan sikap yang dibutuhkan oleh mahasiswa untuk sukses di dunia profesional."]
+        },
+        {
+            "tag": "academic_support",
+            "patterns": ["dukungan akademik", "layanan tutor", "bimbingan belajar"],
+            "responses": ["UNUKASE menyediakan berbagai layanan dukungan akademik, termasuk tutor, konselor akademik, dan layanan bimbingan belajar, untuk membantu mahasiswa mencapai potensi akademiknya secara maksimal."]
+        },
+        {
+            "tag": "assessment_evaluation",
+            "patterns": ["sistem penilaian", "evaluasi akademik", "bagaimana sistem penilaian"],
+            "responses": ["UNUKASE menerapkan berbagai metode penilaian dan evaluasi, termasuk ujian tertulis, tugas proyek, presentasi, dan ujian praktik, sesuai dengan karakteristik masing-masing mata kuliah dan program studi."]
+        },
+        {
+            "tag": "akuntansi",
+            "patterns": ["akuntansi", "prodi akuntansi", "apa itu akuntansi", "akuntansi UNUKASE"],
+            "responses": ["Program Studi Akuntansi di UNUKASE bertujuan untuk menghasilkan lulusan yang memiliki pemahaman mendalam tentang prinsip akuntansi, audit, perpajakan, dan aspek lain yang berkaitan dengan bidang akuntansi. Lulusan program studi ini dapat bekerja di berbagai sektor industri, termasuk perusahaan, kantor akuntan publik, dan lembaga keuangan."]
+        },
+        {
+            "tag": "agribisnis",
+            "patterns": ["agribisnis", "prodi agribisnis", "apa itu agribisnis", "agribisnis UNUKASE"],
+            "responses": ["Program Studi Agribisnis di UNUKASE mempersiapkan mahasiswa untuk menjadi profesional yang mampu mengelola bisnis pertanian dan agribisnis dengan baik. Lulusan program studi ini dapat bekerja di berbagai sektor agribisnis, termasuk perusahaan pertanian, perbankan pertanian, dan lembaga penelitian pertanian."]
+        },
+        {
+            "tag": "teknik_informatika",
+            "patterns": ["teknik informatika", "prodi teknik informatika", "apa itu teknik informatika", "teknik informatika UNUKASE"],
+            "responses": ["Program Studi Teknik Informatika di UNUKASE mempersiapkan mahasiswa untuk menjadi ahli dalam bidang teknologi informasi dan komunikasi. Lulusan program studi ini memiliki keahlian dalam pengembangan perangkat lunak, jaringan komputer, keamanan informasi, dan teknologi terkait."]
+        },
+        
+        {
+            "tag": "teknik_sipil",
+            "patterns": ["teknik sipil", "prodi teknik sipil", "apa itu teknik sipil", "sipil","teknik sipil UNUKASE"],
+            "responses": ["Program Studi Teknik Sipil di UNUKASE mempersiapkan mahasiswa untuk menjadi profesional yang mampu merancang, membangun, dan mengelola infrastruktur sipil seperti jalan raya, jembatan, gedung, dan proyek konstruksi lainnya. Lulusan program studi ini dapat bekerja di berbagai sektor, termasuk konstruksi, konsultasi, dan pemerintahan."]
+        },
+        {
+            "tag": "perencanaan_wilayah_kota",
+            "patterns": ["perencanaan wilayah dan kota", "prodi perencanaan wilayah dan kota", "pwk","apa itu perencanaan wilayah dan kota", "perencanaan wilayah dan kota UNUKASE"],
+            "responses": ["Program Studi Perencanaan Wilayah dan Kota di UNUKASE mempersiapkan mahasiswa untuk menjadi ahli dalam merencanakan dan mengelola pengembangan wilayah dan kota. Lulusan program studi ini dapat bekerja di berbagai sektor, termasuk pemerintah daerah, perencanaan perkotaan, konsultan, dan lembaga penelitian."]
+        },
+        {
+            "tag": "pendidikan_guru_sekolah_dasar",
+            "patterns": ["pendidikan guru sekolah dasar","pgsd", "prodi pendidikan guru sekolah dasar", "apa itu pendidikan guru sekolah dasar", "pendidikan guru sekolah dasar UNUKASE"],
+            "responses": ["Program Studi Pendidikan Guru Sekolah Dasar di UNUKASE mempersiapkan mahasiswa untuk menjadi pendidik profesional di tingkat pendidikan dasar. Lulusan program studi ini memiliki kompetensi dalam merencanakan, melaksanakan, dan mengevaluasi proses pembelajaran di sekolah dasar."]
+        },
+        {
+            "tag": "pendidikan_matematika",
+            "patterns": ["pendidikan matematika","pmtk", "prodi pendidikan matematika", "apa itu pendidikan matematika", "pendidikan matematika UNUKASE"],
+            "responses": ["Program Studi Pendidikan Matematika di UNUKASE mempersiapkan mahasiswa untuk menjadi pendidik matematika yang kompeten di berbagai tingkat pendidikan. Lulusan program studi ini memiliki pemahaman mendalam tentang teori dan praktik pembelajaran matematika."]
+        },
+        {
+            "tag": "pendidikan_bahasa_inggris",
+            "patterns": ["pendidikan bahasa inggris","pbi", "prodi pendidikan bahasa inggris", "apa itu pendidikan bahasa inggris", "pendidikan bahasa inggris UNUKASE"],
+            "responses": ["Program Studi Pendidikan Bahasa Inggris di UNUKASE mempersiapkan mahasiswa untuk menjadi pendidik bahasa Inggris yang kompeten di berbagai tingkat pendidikan. Lulusan program studi ini memiliki kemampuan untuk mengajar bahasa Inggris dengan baik dan efektif."]
+        },
+        {
+            "tag": "farmasi",
+            "patterns": ["farmasi", "prodi farmasi", "apa itu farmasi", "farmasi UNUKASE"],
+            "responses": ["Program Studi Farmasi di UNUKASE mempersiapkan mahasiswa untuk menjadi profesional di bidang farmasi yang mampu memberikan pelayanan kesehatan yang berkualitas kepada masyarakat. Lulusan program studi ini memiliki pengetahuan tentang obat, kesehatan masyarakat, dan praktik farmasi."]
+        },
+        {
+            "tag": "arsitektur",
+            "patterns": ["Ceritakan tentang Arsitektur", "Program studi Arsitektur", "Arsitektur"],
+            "responses": ["Program studi Arsitektur di UNUKASE mempersiapkan mahasiswa untuk berfokus pada seni dan ilmu merancang bangunan dan struktur fisik lainnya, mengintegrasikan prinsip estetika, fungsionalitas, dan keberlanjutan."]
+        },
+        {
+            "tag": "kip_scholarship",
+            "patterns": ["beasiswa kip", "kip","beasiswa kip UNUKASE", "apa itu beasiswa kip", "beasiswa kip"],
+            "responses": ["Beasiswa KIP (Kartu Indonesia Pintar) merupakan program bantuan biaya pendidikan dari pemerintah untuk membantu siswa-siswa kurang mampu. UNUKASE bekerja sama dengan pemerintah dalam mendukung implementasi program KIP bagi mahasiswa yang memenuhi persyaratan."]
+        },
+        {
+            "tag": "nu_scholarship",
+            "patterns": ["beasiswa NU", "beasiswa NU UNUKASE", "apa itu beasiswa NU", "beasiswa NU"],
+            "responses": ["Beasiswa NU merupakan program beasiswa yang diselenggarakan oleh organisasi Nahdlatul Ulama untuk membantu mahasiswa yang berprestasi dan berkebutuhan finansial. Beasiswa ini bertujuan untuk mendorong minat dan bakat akademis mahasiswa dalam menyelesaikan studi mereka."]
+        },
+        {
+            "tag": "baznas_scholarship",
+            "patterns": ["beasiswa baznas", "beasiswa baznas UNUKASE", "apa itu beasiswa baznas", "beasiswa baznas"],
+            "responses": ["Beasiswa BAZNAS (Badan Amil Zakat Nasional) merupakan program beasiswa yang diselenggarakan oleh lembaga filantropi untuk membantu mahasiswa yang membutuhkan dukungan finansial. UNUKASE memberikan informasi dan bantuan kepada mahasiswa yang ingin mengikuti program beasiswa ini."]
+        },  
+        {
+            "tag": "academic_programs_list",
+            "patterns": ["program studi", "prodi", "program studi UNUKASE"],
+            "responses": ["UNUKASE memiliki 10 program studi, yaitu Akuntansi, Agribisnis, Teknik Informatika, Teknik Sipil, Perencanaan Wilayah dan Kota, Arsitektur,Pendidikan Guru Sekolah Dasar, Pendidikan Matematika, Pendidikan Bahasa Inggris, dan Farmasi."]
+        },
+        {
+            "tag": "pejabat_struktural",
+            "patterns": ["pejabat struktural", "pejabat struktural masa khidmat 2024-2028", "siapa saja pejabat struktural", "pejabat masa khidmat 2024-2028"],
+            "responses": ["Pejabat Struktural Masa Khidmat 2024-2028 UNUKASE adalah: 1. Ketua: Prof. Dr. H. Maulana Yusran, M.Pd. 2. Wakil Ketua I: Dr. Hj. Siti Maemunah, M.Si. 3. Wakil Ketua II: Dr. H. Muhammad Rahmatullah, M.Si. 4. Wakil Ketua III: Dr. H. Muhammad Iqbal, M.M."]
+        },
+        {
+            "tag": "rector",
+            "patterns": [
+                "siapa rektor sekarang?",
+                "siapa rektor UNUKASE?",
+                "nama rektor saat ini",
+                "rektor saat ini",
+                "rektor UNUKASE",
+                "rektor"
+            ],
+            "responses": [
+                "Rektor UNUKASE saat ini adalah Dr. Ir. H. Abrani Sulaiman, M.Sc. dengan NIP 19640105 199003 1 023."
+            ]
+        },
+        {
+            "tag": "vice_rector_I",
+            "patterns": [
+                "siapa wakil rektor I sekarang?",
+                "siapa wakil rektor I UNUKASE?",
+                "nama wakil rektor I saat ini",
+                "wakil rektor I saat ini",
+                "wakil rektor I UNUKASE",
+                "wr 1"
+            ],
+            "responses": [
+                "Wakil Rektor I UNUKASE saat ini adalah Dr. H. Jarkawi, M.M.Pd dengan NIP 19620401 198911 1 002."
+            ]
+        },
+        {
+            "tag": "vice_rector_II",
+            "patterns": [
+                "siapa wakil rektor II sekarang?",
+                "siapa wakil rektor II UNUKASE?",
+                "nama wakil rektor II saat ini",
+                "wakil rektor II saat ini",
+                "wakil rektor II UNUKASE",
+                "wr 2"
+            ],
+            "responses": [
+                "Wakil Rektor II UNUKASE saat ini adalah Dr. Herita Warni, M.Pd. dengan NIP 19630515 199203 2 001."
+            ]
+        },
+        {
+            "tag": "vice_rector_III",
+            "patterns": [
+                "siapa wakil rektor III sekarang?",
+                "siapa wakil rektor III UNUKASE?",
+                "nama wakil rektor III saat ini",
+                "wakil rektor III saat ini",
+                "wakil rektor III UNUKASE",
+                "wr 3"
+            ],
+            "responses": [
+                "Wakil Rektor III UNUKASE saat ini adalah Dr. Ir. Murjani, S.P., S.I.Kom., M.S., IPM dengan NIDN 1103047501."
+            ]
+        }
+    ]
+}
